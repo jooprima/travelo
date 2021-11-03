@@ -20,10 +20,18 @@ const FooterInfo = ({ title, content }: Props) => {
       </h2>
       {content.map((item: Content | string, index: number) => {
         if (typeof item !== "string") {
-          <Link href={item.href} key={index}>
-            <a className="text-heading-4 text-gray-50 mb-3">{item.label}</a>
-          </Link>;
+          return (
+            <Link href={item.href} key={index}>
+              <a className="text-heading-4 text-gray-50 mb-3">{item.label}</a>
+            </Link>
+          );
         }
+
+        return (
+          <p className="text-heading-4 text-gray-50 mb-3" key={index}>
+            {item}
+          </p>
+        );
       })}
     </div>
   );

@@ -4,6 +4,7 @@ import styles from "./Footer.module.css";
 import traveloLogo from "public/assets/travelo-logo-footer.png";
 import Container from "components/Container";
 import Image from "next/image";
+import FooterInfo from "./FooterInfo";
 
 const Footer = () => {
   return (
@@ -19,6 +20,59 @@ const Footer = () => {
               width="136"
             />
           </figure>
+
+          <div className="flex flex-1 justify-between ml-[106px]">
+            <FooterInfo
+              title="Info"
+              content={[
+                {
+                  label: "Tentang Kami",
+                  href: "/",
+                },
+                {
+                  label: "Testimonial",
+                  href: "/",
+                },
+                {
+                  label: "Kontak",
+                  href: "/",
+                },
+              ]}
+            />
+
+            <FooterInfo
+              title="Perusahaan"
+              content={[
+                {
+                  label: "Syarat & Ketentuan",
+                  href: "/",
+                },
+                {
+                  label: "Kebijakan Privasi",
+                  href: "/",
+                },
+                {
+                  label: "Blog",
+                  href: "/",
+                },
+                {
+                  label: "Bantuan Pelayanan",
+                  href: "/",
+                },
+              ]}
+            />
+
+            <FooterInfo
+              title="Kontak"
+              content={[
+                "Jl. Dago No.1A",
+                "Bandung, Jawa Barat",
+                "Indonesia",
+                "(022)80809090",
+                "contact@email.com",
+              ]}
+            />
+          </div>
         </div>
       </Container>
 
