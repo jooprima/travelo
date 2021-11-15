@@ -1,12 +1,15 @@
-import React from 'react'
-import Layout from 'components/Layout'
+import React from "react";
+import Layout from "components/Layout";
+import TopSection from "containers/Home/TopSection";
+import SecondSection from "containers/Home/SecondSection";
 
 const Home = () => {
-    return (
-        <Layout>
+  return (
+    <Layout>
+      <TopSection />
+      <SecondSection />
+    </Layout>
+  );
+};
 
-        </Layout>
-    )
-}
-
-export default Home
+export default Home;

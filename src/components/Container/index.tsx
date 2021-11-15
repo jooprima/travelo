@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 
-type Props = {
+interface Props {
   children: ReactNode;
   size?: string;
-};
+}
 
 const Container = ({ children, size = "xl" }: Props) => {
   return (
