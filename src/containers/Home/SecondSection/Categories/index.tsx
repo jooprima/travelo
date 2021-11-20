@@ -1,7 +1,9 @@
+import CategoryCard from './CategoryCard'
+
 const Categories = () => {
   return (
     <>
-      <h3 className=" text-heading-3 text-gray-100 font-label font-bold pt14  mb-8">
+      <h3 className=" text-heading-3 text-gray-100 font-label font-bold pt-14 mb-8">
         Kategori Tempat
       </h3>
 
