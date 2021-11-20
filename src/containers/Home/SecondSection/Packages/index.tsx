@@ -1,3 +1,5 @@
+import PackageCard from "./PackageCard";
+
 const Packages = () => {
   return (
     <>
